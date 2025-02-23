@@ -144,9 +144,7 @@ def set_mode_ai():
     else:
         curr_player = playerO  # Pemain sebagai O
         ai_player = playerX    # AI sebagai X
-        # Jika pemain memilih O, AI (sebagai X) akan bergerak terlebih dahulu
-        if mode == "AI" and curr_player == playerO:
-            ai_move()
+        ai_move()
 
     label.config(text=f"Mode AI: Anda sebagai {curr_player}")
     new_game()
